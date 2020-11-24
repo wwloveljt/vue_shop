@@ -22,7 +22,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 ```
 git remote add origin https://github.com/wwloveljt/vue_shop.git
 git branch -M main
- 
+
 git add  .
 git commit -m "readme"
 git push -u origin main
