@@ -1,12 +1,23 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-    </div>
-    <router-view/>
+    <keep-alive>
+      <router-view></router-view>
+    </keep-alive>
+    <MainTabBar></MainTabBar>
   </div>
 </template>
 
-<style lang="scss">
+<script>
+import MainTabBar from "@/components/content/mainTabbar/MainTabBar";
 
+export default {
+  name: 'app',
+  components: {
+    MainTabBar
+  }
+}
+</script>
+
+<style lang="scss">
+  @import "assets/css/base.css";
 </style>
